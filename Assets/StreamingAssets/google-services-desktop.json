@@ -1,0 +1,36 @@
+{
+  "project_info": {
+    "project_number": "425764924774",
+    "project_id": "unity-webview-829bb",
+    "storage_bucket": "unity-webview-829bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:425764924774:ios:22fec4f1dde7696cb8aca7",
+        "android_client_info": {
+          "package_name": "unity.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "425764924774-5fnsmraas3m2162g86m768akc02qtpqm.apps.googleusercontent.com"
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM3NOTdP_Q8y2JysE3YMQpjNIz1RZkb3I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 0
+        },
+        "appinvite_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
