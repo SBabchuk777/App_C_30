@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - DeadCollider
   layers:
   - Default
   - TransparentFX
@@ -40,4 +41,16 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Backgroound
+    uniqueID: 1830059867
+    locked: 0
+  - name: Obstacles
+    uniqueID: 2231713915
+    locked: 0
+  - name: Bird
+    uniqueID: 117449027
+    locked: 0
+  - name: UI
+    uniqueID: 2022555111
     locked: 0

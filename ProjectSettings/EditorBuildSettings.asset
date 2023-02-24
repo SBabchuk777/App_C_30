@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Prototype/SceneLoaderCore/Example/Scenes/Preloader.unity
     guid: 884e48c4e9ec07d4887d3151a7d3e46a
   - enabled: 1
-    path: Assets/Game/Scenes/Game.unity
+    path: Assets/Game/Scenes/Menu.unity
     guid: a77fd0c5507a045b480898b9cd1a59e0
+  - enabled: 1
+    path: Assets/Game/Scenes/Game.unity
+    guid: e3f9dc2e767e24af2924808b54b8e33f
   m_configObjects: {}
