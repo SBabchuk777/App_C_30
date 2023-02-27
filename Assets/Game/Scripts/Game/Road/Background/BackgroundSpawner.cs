@@ -7,6 +7,8 @@ namespace Game.Road.Background
 {
     public class BackgroundSpawner : MonoBehaviour
     {
+        [SerializeField] private float _speedBoost = 0f;
+
         [SerializeField] private BackgroundPart _firstRoad = null;
         [SerializeField] private BackgroundPart _backgroundPrefab = null;
 
@@ -24,6 +26,8 @@ namespace Game.Road.Background
         private void Update()
         {
             float playerPositionX = _birdTransform.position.x;
+
+            transform.position = new Vector3(playerPositionX * _speedBoost, 0f, 0f);
 
             BackgroundPart frontBackground = _roads.First();
 

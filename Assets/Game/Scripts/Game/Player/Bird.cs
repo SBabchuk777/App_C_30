@@ -1,3 +1,6 @@
+using System;
+using DG.Tweening;
+using Game.Road;
 using UnityEngine;
 
 namespace Game.Player
@@ -5,6 +8,8 @@ namespace Game.Player
     [RequireComponent(typeof(Rigidbody2D))]
     public class Bird : MonoBehaviour
     {
+        public event Action OnDead = null;
+
         [SerializeField] private float _velocity = 10f;
 
         private Animator _animator;
@@ -51,13 +56,33 @@ namespace Game.Player
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            if (IsDead)
+                return;
+
             if (collision.gameObject.tag == "DeadCollider")
             {
                 IsDead = true;
 
                 _rigidbody.velocity = Vector2.zero;
+                _rigidbody.mass = 10f;
 
                 _animator.SetTrigger("Damage");
+
+                OnDead?.Invoke();
+            }
+        }
+
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.tag == "Bonus")
+            {
+                Bonus bonus = collision.GetComponent<Bonus>();
+
+                Destroy(collision);
+
+                bonus.transform.DOScale(0f, 0.25f);
+
+                Wallet.AddMoney(bonus.BonusPoints);
             }
         }
     }
