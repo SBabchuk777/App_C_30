@@ -53,11 +53,7 @@ namespace Game.UI
                 gameObject.SetActive(true);
 
                 _fade.DOFade(0.5f, 0.25f).SetEase(Ease.InSine);
-                _panel.DOScale(1f, 0.25f).SetEase(Ease.InSine)
-                    .OnComplete(() =>
-                    {
-                        AudioController.Release(true);
-                    });
+                _panel.DOScale(1f, 0.25f).SetEase(Ease.InSine);
             });
         }
     }

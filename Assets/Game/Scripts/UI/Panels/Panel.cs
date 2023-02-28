@@ -22,7 +22,7 @@ namespace UI.Panels
             if (_isAniming)
                 return;
 
-            AudioController.PlaySound("wzuuuh");
+            AudioController.PlaySound("pannels");
 
             DOVirtual.DelayedCall(0.1f, () =>
             {

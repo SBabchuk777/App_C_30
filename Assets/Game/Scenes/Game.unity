@@ -1142,8 +1142,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.25, y: 0}
-  m_Size: {x: 1.75, y: 1.5}
+  m_Offset: {x: 0.1875, y: 0}
+  m_Size: {x: 1.3125, y: 1.125}
   m_Direction: 1
 --- !u!1 &662185194
 GameObject:
@@ -1158,6 +1158,7 @@ GameObject:
   - component: {fileID: 662185198}
   - component: {fileID: 662185197}
   - component: {fileID: 662185196}
+  - component: {fileID: 662185200}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -1281,6 +1282,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662185194}
   m_CullTransparentMesh: 1
+--- !u!114 &662185200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 662185194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8003e88ddb7d4072839280d771bea66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundKey: click
 --- !u!1 &798758385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1834,6 +1848,7 @@ GameObject:
   - component: {fileID: 1716464224}
   - component: {fileID: 1716464223}
   - component: {fileID: 1716464226}
+  - component: {fileID: 1716464227}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -1956,6 +1971,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _sceneName: Menu
+--- !u!114 &1716464227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1716464221}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8003e88ddb7d4072839280d771bea66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundKey: click
 --- !u!1001 &1765580131
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2070,6 +2098,7 @@ GameObject:
   - component: {fileID: 1905990891}
   - component: {fileID: 1905990890}
   - component: {fileID: 1905990889}
+  - component: {fileID: 1905990893}
   m_Layer: 5
   m_Name: HomeButton
   m_TagString: Untagged
@@ -2193,6 +2222,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1905990887}
   m_CullTransparentMesh: 1
+--- !u!114 &1905990893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905990887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8003e88ddb7d4072839280d771bea66, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soundKey: click
 --- !u!1 &1957291919
 GameObject:
   m_ObjectHideFlags: 0

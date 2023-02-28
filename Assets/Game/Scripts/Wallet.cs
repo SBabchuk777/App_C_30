@@ -7,7 +7,7 @@ public static class Wallet
 
     public static int Money
     {
-        get => PlayerPrefs.GetInt("WalletMoney", 0);
+        get => PlayerPrefs.GetInt("WalletMoney", 1000);
 
         private set
         {

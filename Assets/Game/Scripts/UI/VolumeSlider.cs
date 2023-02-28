@@ -1,5 +1,6 @@
 using Prototype.AudioCore;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 using AudioSettings = Prototype.AudioCore.AudioSettings;
@@ -7,7 +8,7 @@ using AudioSettings = Prototype.AudioCore.AudioSettings;
 namespace UI
 {
     [RequireComponent(typeof(Slider))]
-    public class VolumeSlider : MonoBehaviour
+    public class VolumeSlider : MonoBehaviour, IPointerUpHandler
     {
         [SerializeField] private StreamGroup _stream = StreamGroup.Music;
 
@@ -23,6 +24,7 @@ namespace UI
 
             slider.onValueChanged.AddListener((volume) =>
             {
+
                 if (_stream == StreamGroup.Music)
                     AudioSettings.SetMusicVol(slider.value);
 
@@ -30,5 +32,8 @@ namespace UI
                     AudioSettings.SetSoundsVol(slider.value);
             });
         }
+
+        public void OnPointerUp(PointerEventData eventData) =>
+            AudioController.PlaySound("slider");
     }
 }
