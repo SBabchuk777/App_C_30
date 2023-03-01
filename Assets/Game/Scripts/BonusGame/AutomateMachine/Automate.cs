@@ -5,18 +5,18 @@ using System.Linq;
 using Prototype.AudioCore;
 using UnityEngine;
 using UnityEngine.UI;
+
 using Random = UnityEngine.Random;
 
 namespace Level.AutomateMachine
 {
     public class Automate : MonoBehaviour
     {
-        [SerializeField] private Vector2Int _areaSize = new Vector2Int(4, 5);
-        [SerializeField] private Slot[] _slots = new Slot[0];
+        [SerializeField] private SlotType[] _slotTypes = new SlotType[0];
 
         [Space]
-        
-        [SerializeField] private SlotType[] _slotTypes = new SlotType[0];
+
+        [SerializeField] private SlotsLine[] _slotLines = new SlotsLine[0];
 
         [Space]
 
@@ -28,68 +28,53 @@ namespace Level.AutomateMachine
 
         private void Awake()
         {
+            SlotsRandomizer.InitPool(_slotTypes);
+
+            foreach (SlotsLine line in _slotLines)
+                line.Init();
+
             _spinButton.onClick.AddListener(() =>
                 StartCoroutine(Spin()));
-
-            for (int i = 0; i < _slots.Length; i++)
-                _slots[i].SetDefaultSlot(GetRandomSlot());
         }
 
         private IEnumerator Spin()
         {
+            if (_betSelector.CurrentBet == 0)
+                yield break;
+
             _spinButton.interactable = false;
             _betSelector.SetActive(false);
-
-            Slot[,] grid = GetSlotsGrid();
-            SlotType[,] newValues = new SlotType[_areaSize.y, _areaSize.x];
-
-            //Create next grid
-
-            for (int y = 0; y < _areaSize.y; y++)
-            {
-                for (int x = 0; x < _areaSize.x; x++)
-                    newValues[y, x] = GetRandomSlot();
-            }
-
-            int maxIndex = _areaSize.x + _areaSize.y;
 
             //Spin anim
 
             AudioController.PlaySound("slot");
 
-            for (int animIndex = 0; animIndex < maxIndex; animIndex++)
+            foreach (SlotsLine line in _slotLines)
             {
-                for (int y = 0; y < _areaSize.y; y++)
-                {
-                    for (int x = 0; x < _areaSize.x; x++)
-                    {
-                        float distance = x + y;
-
-                        if (distance == animIndex)
-                            grid[y, x].SetSlot(newValues[y, x]);
-                    }
-                }
+                line.StartSpin();
 
                 yield return new WaitForSeconds(0.1f);
             }
 
-            yield return new WaitForSeconds(0.25f);
+            yield return new WaitForSeconds(0.75f);
+
+            Slot[,] grid = GetSlotsGrid();
 
             float scale = 1f;
 
             List<Slot> winSlots = new List<Slot>();
 
-            //Check lines
+            //Check rows
 
-            for (int y = 0; y < _areaSize.y; y++)
+            for (int y = 0; y < grid.GetLength(1); y++)
             {
-                SlotType lineSlotType = grid[y, 0].SlotType;
+                SlotType lineSlotType = grid[0, y].SlotType;
 
                 bool isLine = true;
 
-                for (int x = 1; x < _areaSize.x; x++)
+                for (int x = 1; x < grid.GetLength(0); x++)
                 {
-                    if (lineSlotType != grid[y, x].SlotType)
+                    if (lineSlotType != grid[x, y].SlotType)
                     {
                         isLine = false;
 
@@ -101,25 +86,25 @@ namespace Level.AutomateMachine
                 {
                     scale *= lineSlotType.horizontalLinePrize;
 
-                    for (int x = 0; x < _areaSize.x; x++)
+                    for (int x = 0; x < grid.GetLength(0); x++)
                     {
-                        if (!winSlots.Contains(grid[y, x]))
-                            winSlots.Add(grid[y, x]);
+                        if (!winSlots.Contains(grid[x, y]))
+                            winSlots.Add(grid[x, y]);
                     }
                 }
             }
 
-            //Check rows
+            //Check columns
 
-            for (int x = 0; x < _areaSize.x; x++)
+            for (int x = 0; x < grid.GetLength(0); x++)
             {
-                SlotType lineSlotType = grid[0, x].SlotType;
+                SlotType lineSlotType = grid[x, 0].SlotType;
 
                 bool isLine = true;
 
-                for (int y = 1; y < _areaSize.y; y++)
+                for (int y = 1; y < grid.GetLength(1); y++)
                 {
-                    if (lineSlotType != grid[y, x].SlotType)
+                    if (lineSlotType != grid[x, y].SlotType)
                     {
                         isLine = false;
 
@@ -131,10 +116,10 @@ namespace Level.AutomateMachine
                 {
                     scale *= lineSlotType.verticalLinePrize;
 
-                    for (int y = 0; y < _areaSize.y; y++)
+                    for (int y = 0; y < grid.GetLength(1); y++)
                     {
-                        if (!winSlots.Contains(grid[y, x]))
-                            winSlots.Add(grid[y, x]);
+                        if (!winSlots.Contains(grid[x, y]))
+                            winSlots.Add(grid[x, y]);
                     }
                 }
             }
@@ -175,45 +160,22 @@ namespace Level.AutomateMachine
 
         private Slot[,] GetSlotsGrid()
         {
-            Slot[,] grid = new Slot[_areaSize.y, _areaSize.x];
+            int width = _slotLines.Count();
+            int height = _slotLines.First().TargetSlots.Count();
 
-            int index = 0;
+            Slot[,] grid = new Slot[width, height];
 
-            for (int y = 0; y < _areaSize.y; y++)
+            for (int x = 0; x < width; x++)
             {
-                for (int x = 0; x < _areaSize.x; x++)
-                {
-                    grid[y, x] = _slots[index];
+                Slot[] line = _slotLines[x].TargetSlots;
 
-                    index++;
+                for (int y = 0; y < height; y++)
+                {
+                    grid[x, y] = line[y];
                 }
             }
 
             return grid;
-        }
-
-        private SlotType GetRandomSlot()
-        {
-            float maxValue = SpawnRateTo(null);
-
-            float randomValue = Random.Range(0f, maxValue);
-
-            return _slotTypes.Where(s => randomValue <= SpawnRateTo(s)).First();
-        }
-
-        private float SpawnRateTo(SlotType slot)
-        {
-            float rate = 0f;
-
-            for (int i = 0; i < _slotTypes.Length; i++)
-            {
-                rate += _slotTypes[i].spawnRate;
-
-                if (_slotTypes[i] == slot)
-                    return rate;
-            }
-
-            return rate;
         }
     }
 }

@@ -10,51 +10,35 @@ namespace Level.AutomateMachine
     public class Slot : MonoBehaviour
     {
         [SerializeField] private Image _slotImage = null;
+        [SerializeField] private Image _glowImage = null;
+
+        private Sequence _lineAnim = null;
+
+        public RectTransform RectTransform { get; private set; }
 
         public SlotType SlotType { get; private set; }
 
-        public void SetDefaultSlot(SlotType slot)
+        private void Awake() =>
+            RectTransform = GetComponent<RectTransform>();
+
+        public void SetSlot(SlotType slot)
         {
             SlotType = slot;
 
             _slotImage.sprite = SlotType.slotSprite;
         }
 
-        public void SetSlot(SlotType slot, Action onCompleteAnim = null)
-        {
-            SlotType = slot;
-
-            RectTransform slotTransform = _slotImage.rectTransform;
-
-            slotTransform.DOKill();
-
-            slotTransform.DOScaleX(0f, 0.125f).SetEase(Ease.InSine).OnComplete(() =>
-            {
-                _slotImage.sprite = SlotType.slotSprite;
-
-                slotTransform.DOScaleX(1f, 0.125f).SetEase(Ease.OutSine).OnComplete(() =>
-                    onCompleteAnim?.Invoke());
-            });
-        }
-
         public void PlayLineAnim()
         {
-            RectTransform slotTransform = _slotImage.rectTransform;
+            if (_lineAnim != null && _lineAnim.IsActive())
+                _lineAnim.Kill();
 
-            slotTransform.DOKill();
+            _lineAnim.Append(_glowImage.DOFade(0.5f, 0.125f));
 
-            slotTransform.DOScale(1.1f, 0.25f).OnComplete(() =>
-            {
-                slotTransform.DOScale(1f, 0.25f).OnComplete(() =>
-                {
-                    slotTransform.DOScale(1.1f, 0.25f).OnComplete(() =>
-                    {
-                        slotTransform.DOScale(1f, 0.25f).OnComplete(() =>
-                        {
-                        });
-                    });
-                });
-            });
+            _lineAnim.Append(_glowImage.DOFade(1f, 0.25f)
+                .SetLoops(6, LoopType.Yoyo));
+
+            _lineAnim.Append(_glowImage.DOFade(0f, 0.125f));
         }
     }
 }

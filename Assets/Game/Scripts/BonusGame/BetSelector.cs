@@ -12,7 +12,9 @@ namespace Level
 {
     public class BetSelector : MonoBehaviour
     {
-        public static int MinBet = 1;
+        [SerializeField] private int _startBet = 25;
+
+        [Space]
 
         [SerializeField] private Text _betText = null;
 
@@ -62,13 +64,7 @@ namespace Level
 
         private void Awake()
         {
-            List<int> betSteps = _betSteps.Where(bet => bet > MinBet).ToList();
-
-            betSteps.Insert(0, MinBet);
-
-            _betSteps = betSteps.ToArray();
-
-            CurrentBet = MinBet;
+            CurrentBet = _startBet;
 
             _addButton.onClick.AddListener(() =>
             {

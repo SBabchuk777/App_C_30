@@ -33,7 +33,7 @@ namespace UI
 
             var format = new NumberFormatInfo { NumberGroupSeparator = " " };
 
-            _counterTween = DOVirtual.Int(int.Parse(_text.text), count, 0.35f,
+            _counterTween = DOVirtual.Int(int.Parse(_text.text.Replace(" ", "")), count, 0.35f,
                 (value) => _text.text = value.ToString("#,0", format));
         }
     }
