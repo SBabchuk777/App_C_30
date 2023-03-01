@@ -21,6 +21,7 @@ namespace Level.AutomateMachine
         [Space]
 
         [SerializeField] private Button _spinButton = null;
+        [SerializeField] private Toggle _autoSpinToggle = null;
 
         [Space]
 
@@ -35,6 +36,23 @@ namespace Level.AutomateMachine
 
             _spinButton.onClick.AddListener(() =>
                 StartCoroutine(Spin()));
+
+            _autoSpinToggle.onValueChanged.AddListener((active) =>
+            {
+                if (!active)
+                    return;
+
+                if (!_spinButton.interactable)
+                    return;
+
+                if (_betSelector.CurrentBet == 0)
+                {
+                    _autoSpinToggle.isOn = false;
+                    return;
+                }
+
+                StartCoroutine(Spin());
+            });
         }
 
         private IEnumerator Spin()
@@ -60,69 +78,9 @@ namespace Level.AutomateMachine
 
             Slot[,] grid = GetSlotsGrid();
 
-            float scale = 1f;
-
             List<Slot> winSlots = new List<Slot>();
 
-            //Check rows
-
-            for (int y = 0; y < grid.GetLength(1); y++)
-            {
-                SlotType lineSlotType = grid[0, y].SlotType;
-
-                bool isLine = true;
-
-                for (int x = 1; x < grid.GetLength(0); x++)
-                {
-                    if (lineSlotType != grid[x, y].SlotType)
-                    {
-                        isLine = false;
-
-                        break;
-                    }
-                }
-
-                if (isLine)
-                {
-                    scale *= lineSlotType.horizontalLinePrize;
-
-                    for (int x = 0; x < grid.GetLength(0); x++)
-                    {
-                        if (!winSlots.Contains(grid[x, y]))
-                            winSlots.Add(grid[x, y]);
-                    }
-                }
-            }
-
-            //Check columns
-
-            for (int x = 0; x < grid.GetLength(0); x++)
-            {
-                SlotType lineSlotType = grid[x, 0].SlotType;
-
-                bool isLine = true;
-
-                for (int y = 1; y < grid.GetLength(1); y++)
-                {
-                    if (lineSlotType != grid[x, y].SlotType)
-                    {
-                        isLine = false;
-
-                        break;
-                    }
-                }
-
-                if (isLine)
-                {
-                    scale *= lineSlotType.verticalLinePrize;
-
-                    for (int y = 0; y < grid.GetLength(1); y++)
-                    {
-                        if (!winSlots.Contains(grid[x, y]))
-                            winSlots.Add(grid[x, y]);
-                    }
-                }
-            }
+            float scale = BonusCalculator.GetBonus(grid, winSlots);
 
             //Results
 
@@ -141,7 +99,7 @@ namespace Level.AutomateMachine
 
                 Wallet.AddMoney(win);
 
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(1.5f);
             }
             else
             {
@@ -154,8 +112,19 @@ namespace Level.AutomateMachine
                 yield return new WaitForSeconds(0.25f);
             }
 
-            _spinButton.interactable = true;
-            _betSelector.SetActive(true);
+            if (_autoSpinToggle.isOn && _betSelector.CurrentBet != 0)
+            {
+                yield return new WaitForSeconds(0.25f);
+
+                StartCoroutine(Spin());
+            }
+            else
+            {
+                _autoSpinToggle.isOn = false;
+
+                _spinButton.interactable = true;
+                _betSelector.SetActive(true);
+            }
         }
 
         private Slot[,] GetSlotsGrid()

@@ -52,7 +52,7 @@ namespace Level
             }
         }
 
-        public int CurrentStepIndex
+        private int CurrentStepIndex
         {
             get
             {
