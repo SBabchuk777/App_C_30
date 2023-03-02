@@ -63,6 +63,8 @@ namespace Level.AutomateMachine
             _spinButton.interactable = false;
             _betSelector.SetActive(false);
 
+            yield return new WaitForSeconds(0.1f);
+
             //Spin anim
 
             AudioController.PlaySound("slot");

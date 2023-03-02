@@ -13,7 +13,12 @@ namespace Game.Player
         public static int MaxScore
         {
             get => PlayerPrefs.GetInt("MaxScore", 0);
-            private set => PlayerPrefs.SetInt("MaxScore", value);
+
+            private set
+            {
+                PlayerPrefs.SetInt("MaxScore", value);
+                PlayerPrefs.Save();
+            }
         }
 
         [SerializeField] private Text _text = null;

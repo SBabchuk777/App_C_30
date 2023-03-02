@@ -84,6 +84,9 @@ namespace Game.Player
 
         private void OnTriggerEnter2D(Collider2D collision)
         {
+            if (IsDead)
+                return;
+
             if (collision.tag == "Bonus")
             {
                 AudioController.PlaySound("collect");

@@ -12,6 +12,7 @@ public static class Wallet
         private set
         {
             PlayerPrefs.SetInt("WalletMoney", value);
+            PlayerPrefs.Save();
 
             OnChanged?.Invoke(value);
         }
