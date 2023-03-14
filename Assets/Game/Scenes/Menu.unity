@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311915, g: 0.3807396, b: 0.35872662, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -390,7 +390,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: -0.000972441}
-  m_SizeDelta: {x: 0, y: 619.5625}
+  m_SizeDelta: {x: 0, y: 2917.2627}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &139557102
 MonoBehaviour:
@@ -439,26 +439,69 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget non sapien
-    vulputate. Viverra diam eget amet quis pulvinar interdum. Et dignissim amet sed
-    quisque. Nunc mauris aliquam elit rutrum elit ac lorem diam. Pellentesque ultricies
-    fermentum in rhoncus nullam accumsan dolor urna, placerat. Vivamus in ultrices
-    ut venenatis nibh mauris. Diam mauris, mattis sit scelerisque nunc semper urna
-    porttitor. Non mattis eleifend risus tortor neque lorem mollis iaculis scelerisque.
-    Purus a duis non euismod sagittis. Vulputate cras pellentesque vitae ac netus
-    sit. Adipiscing eget id sem sem consequat leo. Malesuada commodo facilisis at
-    amet, amet amet, integer. Orci pharetra dignissim tincidunt integer felis. Laoreet
-    interdum lorem ut pellentesque urna. Accumsan viverra fringilla sollicitudin
-    quis. Euismod lacus consequat, imperdiet sed tristique volutpat felis imperdiet.
-    Quis sodales nec bibendum iaculis purus dui neque proin. Mauris venenatis, sed
-    lectus fusce. Quisque aliquam vitae egestas lectus ut id augue tortor malesuada.
-    Cursus imperdiet aliquam, nibh volutpat, aliquam venenatis, velit consequat adipiscing.
-    Lectus pretium porttitor neque, diam suspendisse. Imperdiet semper lectus eget
-    viverra erat pharetra at massa. Ultrices nec sed feugiat orci varius nulla fusce
-    pulvinar ornare. Bibendum senectus amet purus feugiat elit felis. Tellus in nunc,
-    tristique sapien. Accumsan ac ridiculus laoreet non libero tincidunt. Egestas
-    erat tortor, mi, cursus ut mauris consequat. Ac commodo scelerisque curabitur
-    id ullamcorper. Eget nisl accumsan sed tempus.
+  m_Text: "Intro\r\nArmin VanBluren (\"me\") welcomes you. I have created this Privacy
+    Notice (\"Privacy Notice\") to protect your right to information. It describes
+    how your personal data is processed and informs you about who processes it, for
+    what purpose and how.\r\nThe privacy policy applies to my mobile application
+    - Fair Go BirdWin (\"Application\").\r\nContent\r\nIntro\r\nContent\r\nAbout
+    us\r\nAbout you\r\nPersonal data we process\r\nLegal basis for processing\r\nVisitors\u2019
+    data (automatically-collected data)\r\nData transfer\r\nData protection\r\nYour
+    rights\r\nEU residents\r\nUS residents\r\nPrivacy Notice updating\r\nAbout me\r\nName:
+    Armin VanBluren\r\nAddress: Linnam\xE4e tee 57, 13911, Tallinn\r\nEmail: arminblured71@gmail.com
+    \u2013 for any issues\r\nAbout you\r\nUser: When you visit my App you become
+    my User.\r\nVisitor: When you download and run my App you become my Visitor.\r\nPersonal
+    data me process\r\nI receive data when you visit our app. The data that I collect
+    and process with the help of the application are divided into the following categories:\r\nVisitor\u2019s
+    data (automatically-collected data).\r\nAlthough I do not necessarily do so,
+    I may also receive data from third parties. It all depends on your settings and
+    the features you use.\r\nLegal basis for processing\r\nI can process personal
+    data on the following legal grounds:\r\nperformance of the contract \u2014 for
+    the processing of personal data necessary for the conclusion and performance
+    of a contract;\r\nlegal obligation \u2014 for the processing necessary to comply
+    with the law;\r\nlegitimate interest \u2014 for the processing reasonable for
+    the User and necessary for the development of my service;\r\nconsent \u2014 for
+    additional processing for specific purposes.\r\nVisitors\u2019 data (automatically-collected
+    data)\r\nI collect next data when you use my App:\r\naccess to network status;\r\nInternet
+    access;\r\naccess to the gallery;\r\naccess to manage all files;\r\naccess to
+    use the promotional ID.\r\n\r\nThe app does use third-party services that may
+    collect information used to identify you. Link to the privacy policy of third-party
+    service providers used by the app:\r\nAdMob;\r\n\r\n\r\nThe reason for processing
+    the above data: the smooth operation of the App.\r\n\r\nLegal basis for the use
+    of data: legitimate interest.\r\n\r\nData that is processed on the basis of legitimate
+    interest, is stored during the use of the application for +2 years.\r\nData transfer\r\nI
+    transfer your data on the following grounds:\r\nConsent. I may share your personal
+    data based on your express consent.\r\n\r\nCompliance with the law. I may disclose
+    your personal data to third parties as necessary:\r\nto comply with a government
+    request, court order, or applicable law;\r\nto prevent unlawful use of my App
+    or policies;\r\nto protect against claims of third parties;\r\nto help prevent
+    or investigate fraud.\r\n\r\nTransfer to third parties.The application was developed
+    by me and may transfer your personal data to third parties based on a data processing
+    agreement and third party SDK such Appsflyer and Firebase.\r\n\r\nPlease remember!
+    I will ask for your consent if data transfer is not part of the contract.\r\nData
+    protection\r\nI apply a variety of security measures appropriate to the risks.\r\nTechnical
+    measures include: backups and two-factor authentication. \r\nYour rights\r\nYou,
+    as a data subject, have the list of privacy rights. You can find it in this section.\r\nEU
+    residents\r\nOur EU users have the following rights:\r\nRight of access: You
+    can ask for an explanation about the processing of your personal data\r\nThe
+    right to correction: You can change your data if it is inaccurate or incomplete\r\nThe
+    right to erasure: You can send me a request to delete your personal data from
+    my system. I will delete them unless otherwise provided by law\r\nThe right to
+    restrict processing: You can prohibit me from processing your personal data,
+    in part or in full.\r\nThe right to data portability: You can request all the
+    data you have provided to me and request that the data be transferred to another
+    controller\r\nRight to object: You can object to the processing of your personal
+    data\r\nRight to withdraw consent: You can withdraw your consent at any time\r\nRight
+    to file a complaint: If your request has not been granted, you can file a complaint
+    with the regulatory authority\r\nTo exercise your rights, please contact me.
+    If your request was not satisfied, you can submit a complaint to your local Data
+    Protection Authority. You may find it here.\r\nPrivacy Notice updating\r\n\r\nPrivacy
+    Notice and the relationships falling under its effect are regulated by the General
+    Data Protection Regulation for EU citizens. For the details, please, contact
+    me.\r\nExisting laws and requirements for personal data processing are subject
+    to change. In this case, I will publish a new version of the Privacy Notice in
+    our App.\r\nIf significant material changes are made to my service, that may
+    affect your privacy and confidentiality. In that case, I will notify you by displaying
+    information on the main page of our App and ask for your consent if necessary.\r\n"
 --- !u!222 &139557104
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2471,7 +2514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1070900472
 RectTransform:
   m_ObjectHideFlags: 0
