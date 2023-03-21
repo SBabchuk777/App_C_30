@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/BonusGame.unity
     guid: fecf80f3857b6425d8a74ffd52ce5046
+  - enabled: 1
+    path: Assets/Balaso Software/Example/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}

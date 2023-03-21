@@ -15,8 +15,8 @@ MonoBehaviour:
   usesCleartextTraffic: 1
   writeExternalStorage: 0
   accessFineLocation: 0
-  addsKotlin: 1
+  addsKotlin: 0
   addsAndroidBrowser: 0
-  enableJetifier: 0
+  enableJetifier: 1
   authCallbackUrls: []
   supportLINELogin: 0

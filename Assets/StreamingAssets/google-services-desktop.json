@@ -1,25 +1,25 @@
 {
   "project_info": {
-    "project_number": "425764924774",
-    "project_id": "unity-webview-829bb",
-    "storage_bucket": "unity-webview-829bb.appspot.com"
+    "project_number": "1049011060745",
+    "project_id": "ignition-casino-6446362479-c30",
+    "storage_bucket": "ignition-casino-6446362479-c30.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:425764924774:ios:22fec4f1dde7696cb8aca7",
+        "mobilesdk_app_id": "1:1049011060745:ios:aeaa9f1ec7a5ea4c0cb8d8",
         "android_client_info": {
-          "package_name": "unity.test"
+          "package_name": "levis.gg"
         }
       },
       "oauth_client": [
         {
-          "client_id": "425764924774-5fnsmraas3m2162g86m768akc02qtpqm.apps.googleusercontent.com"
+          "client_id": "1049011060745-d0uo7pvrikgh4qloh09ro73h3qr83hre.apps.googleusercontent.com"
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDM3NOTdP_Q8y2JysE3YMQpjNIz1RZkb3I"
+          "current_key": "AIzaSyCXFzHccDCgx85ww3mSPuO70Bchyl9qHoc"
         }
       ],
       "services": {

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>1049011060745-d0uo7pvrikgh4qloh09ro73h3qr83hre.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.1049011060745-d0uo7pvrikgh4qloh09ro73h3qr83hre</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCXFzHccDCgx85ww3mSPuO70Bchyl9qHoc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>1049011060745</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>levis.gg</string>
+	<key>PROJECT_ID</key>
+	<string>ignition-casino-6446362479-c30</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ignition-casino-6446362479-c30.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:1049011060745:ios:aeaa9f1ec7a5ea4c0cb8d8</string>
+</dict>
+</plist>

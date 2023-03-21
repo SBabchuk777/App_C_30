@@ -418,6 +418,67 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f79f56867b322fd4d96af4a3ae73975d, type: 3}
+--- !u!1001 &1098910253
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3290348028313337030, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: appIdIOS
+      value: 526b4766-0c97-41f5-bbc1-fd7d20e0d64c
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1891822
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.8484599
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2326.7668
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3482362776605275998, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8011482299896790383, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
+      propertyPath: m_Name
+      value: OneSignal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 79a84df82087e1742a7e979b178581c4, type: 3}
 --- !u!1 &1300861019
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,7 +512,7 @@ Transform:
   - {fileID: 2017668384}
   - {fileID: 2839165108150706315}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1430578490
 GameObject:
@@ -812,7 +873,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 213624919316566146, guid: c95b346cf14486b4a9281b40132e03a4, type: 3}
       propertyPath: _appID
-      value: 1660921285
+      value: 6446362479
       objectReference: {fileID: 0}
     - target: {fileID: 213624919316566146, guid: c95b346cf14486b4a9281b40132e03a4, type: 3}
       propertyPath: _bundleId
@@ -820,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3883937569171742025, guid: c95b346cf14486b4a9281b40132e03a4, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3883937569171742025, guid: c95b346cf14486b4a9281b40132e03a4, type: 3}
       propertyPath: m_LocalPosition.x
@@ -932,7 +993,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2729193142826281297, guid: f91b8b35e5d8fe74988985be9a7e9bee, type: 3}
       propertyPath: testMode
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729193142826281297, guid: f91b8b35e5d8fe74988985be9a7e9bee, type: 3}
+      propertyPath: _iosSettings.firebaseKey
+      value: firehaz
+      objectReference: {fileID: 0}
+    - target: {fileID: 2729193142826281297, guid: f91b8b35e5d8fe74988985be9a7e9bee, type: 3}
+      propertyPath: _iosSettings.defaultBinom
+      value: https://levikoua.com/
       objectReference: {fileID: 0}
     - target: {fileID: 6815842107495437349, guid: f91b8b35e5d8fe74988985be9a7e9bee, type: 3}
       propertyPath: m_Name
