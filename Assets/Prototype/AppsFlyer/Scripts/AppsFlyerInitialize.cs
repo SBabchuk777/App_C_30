@@ -38,6 +38,8 @@ public class AppsFlyerInitialize : MonoBehaviour, IAppsFlyerConversionData
         
         AppsFlyer.setIsDebug(isDebug);
         
+        Debug.Log($" AppsFlyer.initSDK(devKey, appID, getConversionData): {devKey}, {appID}, {getConversionData}");
+        
         AppsFlyer.initSDK(devKey, appID, getConversionData ? this : null);
 
         AppsFlyer.startSDK();

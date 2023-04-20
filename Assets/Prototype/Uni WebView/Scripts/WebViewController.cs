@@ -109,6 +109,7 @@ public class WebViewController : MonoBehaviour
         Debug.Log($"StartNoRestore :{PlayerPrefs.GetString(Constants.StartNoRestore, "true") }");
         Debug.Log($"StartUrl :{PlayerPrefs.GetString(Constants.StartUrl, "")}");
         Debug.Log($"LastUrl :{PlayerPrefs.GetString(Constants.LastUrl, "")}");
+        Debug.Log($"_url :{UrlBinom}");
         _url = UrlBinom;
         
         var webViewGameObject = new GameObject("UniWebView");
