@@ -23,7 +23,7 @@ namespace Game.Player
 
         [SerializeField] private Text _text = null;
 
-        private Transform _birdTransform = null;
+        private Transform _targetTransform = null;
 
         private Tutorial _tutorial = null;
 
@@ -35,12 +35,12 @@ namespace Game.Player
 
         private void Awake()
         {
-            _birdTransform = FindObjectOfType<Bird>().transform;
+            _targetTransform = FindObjectOfType<Fish>().transform;
 
             _tutorial = FindObjectOfType<Tutorial>();
 
             _tutorial.OnComplete += () =>
-                _startDistance = _birdTransform.position.x;
+                _startDistance = _targetTransform.position.x;
 
             UpdateScoreText();
         }
@@ -50,7 +50,7 @@ namespace Game.Player
             if (!_tutorial.IsCompleted || _obstacles.Count == 0)
                 return;
 
-            if (_obstacles.First().position.x + 2f < _birdTransform.position.x)
+            if (_obstacles.First().position.x + 2f < _targetTransform.position.x)
             {
                 _obstacles.RemoveAt(0);
 

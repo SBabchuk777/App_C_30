@@ -41,7 +41,7 @@ namespace Game.Road
 
         private void Start()
         {
-            _player = FindObjectOfType<Bird>().transform;
+            _player = FindObjectOfType<Fish>().transform;
 
             _tutorial = FindObjectOfType<Tutorial>();
             _scoreCounter = FindObjectOfType<ScoreCounter>();

@@ -12,20 +12,20 @@ namespace Game.Road.Background
         [SerializeField] private BackgroundPart _firstRoad = null;
         [SerializeField] private BackgroundPart _backgroundPrefab = null;
 
-        private Transform _birdTransform = null;
+        private Transform _targetTransform = null;
 
         private List<BackgroundPart> _roads = new List<BackgroundPart>();
 
         private void Awake()
         {
-            _birdTransform = FindObjectOfType<Bird>().transform;
+            _targetTransform = FindObjectOfType<Fish>().transform;
 
             _roads.Add(_firstRoad);
         }
 
         private void Update()
         {
-            float playerPositionX = _birdTransform.position.x;
+            float playerPositionX = _targetTransform.position.x;
 
             transform.position = new Vector3(playerPositionX * _speedBoost, 0f, 0f);
 

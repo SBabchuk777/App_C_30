@@ -16,7 +16,7 @@ namespace Game.Player
 
         private void Awake()
         {
-            _birdTransform = FindObjectOfType<Bird>().transform;
+            _birdTransform = FindObjectOfType<Fish>().transform;
 
             _tutorial = FindObjectOfType<Tutorial>();
 

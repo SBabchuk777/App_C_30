@@ -7,7 +7,7 @@ using UnityEngine;
 namespace Game.Player
 {
     [RequireComponent(typeof(Rigidbody2D))]
-    public class Bird : MonoBehaviour
+    public class Fish : MonoBehaviour
     {
         public event Action OnDead = null;
 
@@ -44,7 +44,7 @@ namespace Game.Player
 
             if (_tutorial.IsCompleted)
             {
-                if (Input.GetMouseButtonDown(0))
+                if (Input.GetMouseButton(0))
                     MoveUp();
             }
             else
@@ -55,8 +55,6 @@ namespace Game.Player
 
         private void MoveUp()
         {
-            _animator.SetTrigger("Click");
-
             _rigidbody.velocity = (Vector2.up + Vector2.right) * _velocity;
 
             AudioController.PlaySound("wings");

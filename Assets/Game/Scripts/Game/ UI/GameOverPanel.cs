@@ -22,15 +22,15 @@ namespace Game.UI
 
         [SerializeField] private ScoreCounter _score = null;
 
-        private Bird _bird = null;
+        private Fish _fish = null;
 
         private void Awake()
         {
             IsGameOver = false;
 
-            _bird = FindObjectOfType<Bird>();
+            _fish = FindObjectOfType<Fish>();
 
-            _bird.OnDead += () => DOVirtual.DelayedCall(1f, Show);
+            _fish.OnDead += () => DOVirtual.DelayedCall(1f, Show);
 
             _fade.color = new Color(0f, 0f, 0f, 0f);
             _panel.localScale = Vector3.zero;
