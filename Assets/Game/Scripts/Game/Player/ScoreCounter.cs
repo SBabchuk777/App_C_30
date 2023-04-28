@@ -3,8 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using Game.Obstacles;
 using UnityEngine;
 using UnityEngine.UI;
+using Object = System.Object;
 
 namespace Game.Player
 {
@@ -29,9 +31,13 @@ namespace Game.Player
 
         private float _startDistance = 0f;
 
-        private List<Transform> _obstacles = new List<Transform>();
+        private int _obstaclesTotalScoreBonus = 0;
 
-        public int Score { get; private set; }
+        private List<IScoreObstacle> _obstacles = new List<IScoreObstacle>();
+
+        public int DistanceScore => Mathf.RoundToInt(_targetTransform.position.x - _startDistance);
+
+        public int TotalScore => DistanceScore + _obstaclesTotalScoreBonus;
 
         private void Awake()
         {
@@ -50,27 +56,36 @@ namespace Game.Player
             if (!_tutorial.IsCompleted || _obstacles.Count == 0)
                 return;
 
-            if (_obstacles.First().position.x + 2f < _targetTransform.position.x)
+            for (int i = 0; i < _obstacles.Count; i++)
             {
-                _obstacles.RemoveAt(0);
+                if ((_obstacles[i] as Object) == null)
+                    continue;
 
-                Score++;
+                float obstacleEndPosition = _obstacles[i].GetCenterX();
+                obstacleEndPosition += (_obstacles[i].GetSizeX() / 2f) + 1f;
+                
+                if (obstacleEndPosition < _targetTransform.position.x)
+                {
+                    _obstacles.RemoveAt(0);
 
-                UpdateScoreText();
+                    _obstaclesTotalScoreBonus += 10;
 
-                if (Score > MaxScore)
-                    MaxScore = Score;
+                    if (TotalScore > MaxScore)
+                        MaxScore = TotalScore;
+                }
             }
+            
+            UpdateScoreText();
         }
 
         private void UpdateScoreText()
         {
             var format = new NumberFormatInfo { NumberGroupSeparator = " " };
 
-            _text.text = $"Score: {Score.ToString("#,0", format)}";
+            _text.text = $"Score: {TotalScore.ToString("#,0", format)}";
         }
 
-        public void AddObstacle(Transform obstacle)
+        public void AddObstacle(IScoreObstacle obstacle)
         {
             if (!_obstacles.Contains(obstacle))
                 _obstacles.Add(obstacle);

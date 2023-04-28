@@ -47,7 +47,7 @@ namespace Game.UI
 
             DOVirtual.DelayedCall(0.25f, () =>
             {
-                _yourScore.text = _score.Score.ToString();
+                _yourScore.text = _score.TotalScore.ToString();
                 _bestScore.text = ScoreCounter.MaxScore.ToString();
 
                 gameObject.SetActive(true);

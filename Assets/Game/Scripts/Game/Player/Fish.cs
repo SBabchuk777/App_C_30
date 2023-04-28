@@ -55,29 +55,35 @@ namespace Game.Player
 
         private void MoveUp()
         {
+            if (!AudioController.IsSoundPlaying("fish_up"))
+                AudioController.PlaySound("fish_up");
+            
             _rigidbody.velocity = (Vector2.up + Vector2.right) * _velocity;
-
-            AudioController.PlaySound("wings");
         }
 
+        private void Kill()
+        {
+            IsDead = true;
+
+            AudioController.StopSound("fish_up");
+            
+            AudioController.PlaySound("result_panel");
+
+            _rigidbody.velocity = Vector2.zero;
+            _rigidbody.mass = 10f;
+
+            _animator.SetTrigger("Damage");
+
+            OnDead?.Invoke(); 
+        }
+        
         private void OnCollisionEnter2D(Collision2D collision)
         {
             if (IsDead)
                 return;
 
-            if (collision.gameObject.tag == "DeadCollider")
-            {
-                IsDead = true;
-
-                AudioController.PlaySound("result_panel");
-
-                _rigidbody.velocity = Vector2.zero;
-                _rigidbody.mass = 10f;
-
-                _animator.SetTrigger("Damage");
-
-                OnDead?.Invoke();
-            }
+            if (collision.gameObject.CompareTag("DeadCollider"))
+                Kill();
         }
 
         private void OnTriggerEnter2D(Collider2D collision)
@@ -85,7 +91,10 @@ namespace Game.Player
             if (IsDead)
                 return;
 
-            if (collision.tag == "Bonus")
+            if (collision.CompareTag("DeadCollider"))
+                Kill();
+            
+            if (collision.CompareTag("Bonus"))
             {
                 AudioController.PlaySound("collect");
 

@@ -5,58 +5,182 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4933aca-5c0b-4147-a8fd-5683811f80f5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.App_C_30/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.App_C_30/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.App_C_30/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.App_C_30/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.App_C_30/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.App_C_30/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.App_C_30/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/Damage.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/Damage.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/Down.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/Down.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/Up.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/Up.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/[Bird].controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Animations/Bird/[Bird].controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Game/game vc.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Game/game vc.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_002.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_003.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_004.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_005.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_006.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_007.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_007.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_008.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_008.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_009.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Fish_die_2_009.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Шар 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Die/Шар 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_000.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_000.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_001.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_002.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_003.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_004.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_005.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_006.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_007.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_007.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_008.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_008.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_009.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/PlayerFish/Move/Fish_move_2_009.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Game/BackgroundPart.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Game/BackgroundPart.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Game/RoadPart.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Game/RoadPart.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_attack_3_009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Fugu/Fish_move_3_009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_attack_1_009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_1/Shark_move_1_009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_attack_2_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Shark_2/Shark_move_2_009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_attack_009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_009.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Enemies/Urchin/Sea urchin_idle_009.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Images/Game/Group 106.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Images/Game/Group 106.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Game/PipeObstacle.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Prefabs/Game/PipeObstacle.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scenes/Game.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/ UI/GameOverPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/ UI/GameOverPanel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Bird.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Fish.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Bird.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Fish.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Camera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Camera.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Fish.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/Fish.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/ScoreCounter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Player/ScoreCounter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Road/Background/BackgroundSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Road/Background/BackgroundSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Road/ObstacleGenerator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Game/Scripts/Game/Road/ObstacleGenerator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/NonLanguage/wings.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Sounds/NonLanguage/wings.mp3.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StreamingAssets/build_info" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StreamingAssets/build_info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GvhProjectSettings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recordings/movie_013.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recordings/movie_014.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recordings/movie_015.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recordings/movie_016.mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recordings/movie_017.mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +189,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Game/Scripts/Game/Obstacles/Obstacle.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../App_C_38/Assets/Game/Scripts/DailyRewarded.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../App_C_38/Assets/Game/Scripts/UI/Panels/Panel.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -82,24 +211,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/Users/user68/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/Users/user68/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/Users/user68/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/Users/user68/Library/Application Support/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/Users/user68/Library/Application Support/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/Users/user68/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2021.3.23f1/Unity.app/Contents/MacOS/Unity" />
@@ -147,7 +276,8 @@
       <option name="presentableId" value="Default" />
       <updated>1680510269383</updated>
       <workItem from="1680510315749" duration="2485000" />
-      <workItem from="1682589979447" duration="1465000" />
+      <workItem from="1682589979447" duration="2136000" />
+      <workItem from="1682671826256" duration="6962000" />
     </task>
     <servers />
   </component>

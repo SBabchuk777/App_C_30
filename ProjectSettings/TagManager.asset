@@ -49,7 +49,10 @@ TagManager:
   - name: Obstacles
     uniqueID: 2231713915
     locked: 0
-  - name: Bird
+  - name: EnemyFish
+    uniqueID: 2732926823
+    locked: 0
+  - name: PlayerFish
     uniqueID: 117449027
     locked: 0
   - name: UI

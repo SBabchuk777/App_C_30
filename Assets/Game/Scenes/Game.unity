@@ -1158,7 +1158,7 @@ GameObject:
   - component: {fileID: 655427704}
   m_Layer: 0
   m_Name: '[PlayerFish]'
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1202,7 +1202,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 117449027
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 38d7acbb4e7a047d8807ba363d6524df, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2419,7 +2419,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1957291920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2432,19 +2432,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51e1f255134824e31bb3dc808a7f5307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _obstaclePrefab: {fileID: 2882384849019724389, guid: 6eadbcfa26bab4f668165a1c756fce44, type: 3}
-  _bonuses:
+  _obstaclesPrefabs:
+  - {fileID: 2882384849019724389, guid: 6eadbcfa26bab4f668165a1c756fce44, type: 3}
+  - {fileID: 2882384849019724389, guid: d502042509f114e618f7aef7632d9e2f, type: 3}
+  _enemiesPrefabs:
+  - {fileID: 8635317468652846778, guid: 3f3afc4bb180a4f6ea88c9f0322abaa3, type: 3}
+  - {fileID: 3890629375791374317, guid: b9b581e2da9be44de82caee046ba7b93, type: 3}
+  - {fileID: 2339540540688178149, guid: 3e7a14a7e2fa94eaeade10bfc2c2c64f, type: 3}
+  - {fileID: 5678863102078721649, guid: 822fa509e1666485b9fdb6cc5ce1f0cc, type: 3}
+  _bonusesPrefabs:
   - {fileID: 239767518549598655, guid: 81361e8a0b9764ee88acf0491de80e51, type: 3}
   - {fileID: 1635089047482493457, guid: 9b4a0ae823bf54d49bd93caa65875ba5, type: 3}
   - {fileID: 4301868322698021243, guid: eda9947391d954e119a5b167e5be5090, type: 3}
-  _minY: -3
-  _maxY: 3
-  _minBonusY: -1.5
-  _maxBonusY: 1.5
-  _easeDistance: 20
-  _hardDistance: 10
   _startSpawnOffset: 30
   _destroyOffset: 20
+  _obstacleMinY: -2
+  _obstacleMaxY: 2
+  _bonusSpawnRate: 0.5
+  _bonusMinY: -2.5
+  _bonusMaxY: 2.5
+  _fishSpawnRate: 0.25
+  _fishMinY: -5
+  _fishMaxY: 5
+  _scoreForHard: 1000
+  _easeDistance: 20
+  _hardDistance: 10
 --- !u!4 &1957291921
 Transform:
   m_ObjectHideFlags: 0
