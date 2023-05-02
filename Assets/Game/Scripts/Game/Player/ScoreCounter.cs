@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using Game.Obstacles;
+using Game.UI;
 using UnityEngine;
 using UnityEngine.UI;
 using Object = System.Object;
@@ -35,9 +36,9 @@ namespace Game.Player
 
         private List<IScoreObstacle> _obstacles = new List<IScoreObstacle>();
 
-        public int DistanceScore => Mathf.RoundToInt(_targetTransform.position.x - _startDistance);
+        private int DistanceScore => Mathf.RoundToInt(_targetTransform.position.x - _startDistance);
 
-        public int TotalScore => DistanceScore + _obstaclesTotalScoreBonus;
+        public int TotalScore { get; private set; }
 
         private void Awake()
         {
@@ -53,7 +54,7 @@ namespace Game.Player
 
         private void Update()
         {
-            if (!_tutorial.IsCompleted || _obstacles.Count == 0)
+            if (!_tutorial.IsCompleted || _obstacles.Count == 0 || GameOverPanel.IsGameOver)
                 return;
 
             for (int i = 0; i < _obstacles.Count; i++)
@@ -69,13 +70,20 @@ namespace Game.Player
                     _obstacles.RemoveAt(0);
 
                     _obstaclesTotalScoreBonus += 10;
-
-                    if (TotalScore > MaxScore)
-                        MaxScore = TotalScore;
                 }
             }
-            
-            UpdateScoreText();
+
+            int newScore = DistanceScore + _obstaclesTotalScoreBonus;
+
+            if (TotalScore < newScore)
+            {
+                TotalScore = newScore;
+
+                if (TotalScore > MaxScore)
+                    MaxScore = TotalScore;
+                
+                UpdateScoreText();
+            }
         }
 
         private void UpdateScoreText()
