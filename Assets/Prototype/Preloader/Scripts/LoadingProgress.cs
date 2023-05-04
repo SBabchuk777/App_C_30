@@ -39,8 +39,12 @@ namespace Prototype.Preloader
             }
             else
             {
+                Screen.autorotateToPortrait = true;
+                Screen.autorotateToPortraitUpsideDown = true;
+                
                 Screen.autorotateToLandscapeLeft = true;
                 Screen.autorotateToLandscapeRight = true;
+                
                 Screen.orientation = ScreenOrientation.AutoRotation;
             }
             
